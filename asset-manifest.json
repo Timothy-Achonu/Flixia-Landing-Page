@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Flixia-Landing-Page/static/css/main.45a2d54c.css",
-    "main.js": "/Flixia-Landing-Page/static/js/main.2c4976c1.js",
+    "main.css": "/Flixia-Landing-Page/static/css/main.35870e1e.css",
+    "main.js": "/Flixia-Landing-Page/static/js/main.6ad8450c.js",
     "static/js/787.28cb0dcd.chunk.js": "/Flixia-Landing-Page/static/js/787.28cb0dcd.chunk.js",
     "static/media/Flixia-logo.PNG": "/Flixia-Landing-Page/static/media/Flixia-logo.e7378317bbbdeb9e8bfd.PNG",
     "index.html": "/Flixia-Landing-Page/index.html",
-    "main.45a2d54c.css.map": "/Flixia-Landing-Page/static/css/main.45a2d54c.css.map",
-    "main.2c4976c1.js.map": "/Flixia-Landing-Page/static/js/main.2c4976c1.js.map",
+    "main.35870e1e.css.map": "/Flixia-Landing-Page/static/css/main.35870e1e.css.map",
+    "main.6ad8450c.js.map": "/Flixia-Landing-Page/static/js/main.6ad8450c.js.map",
     "787.28cb0dcd.chunk.js.map": "/Flixia-Landing-Page/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45a2d54c.css",
-    "static/js/main.2c4976c1.js"
+    "static/css/main.35870e1e.css",
+    "static/js/main.6ad8450c.js"
   ]
 }
