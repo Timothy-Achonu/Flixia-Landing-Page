@@ -18,20 +18,41 @@ export const Header = () => {
   const [arrayIndex, setArrayIndex] = React.useState(0);
   const [displayMenu, setDisplayMenu] = React.useState(false)
 //   console.log(changingText[arrayIndex], arrayIndex);
-  let styles;
-  setTimeout(() => {
-    // styles = {
-    //     animation: "slide-up 500ms linear 3000ms infinite normal none",
-    //   };
-    if (arrayIndex >= changingText.length) {
-      setArrayIndex(0);
-    } else {
-      setArrayIndex((prevIndex) => prevIndex + 1);
+  function randomNumber() {
+    return Math.floor(Math.random() * 6);
+  }
+//   console.log(randomNumber())
+
+  function changeTextColor() {
+    let color;
+    if(arrayIndex === 1) {
+      color = "green"
     }
+    if(arrayIndex === 2) {
+      color = "yellow"
+    }
+    if(arrayIndex === 3) {
+      color = "pink"
+    }
+    if(arrayIndex === 4) {
+      color = "purple"
+    }
+    if(arrayIndex === 5) {
+      color = "violet"
+    }
+    return color;
+  }
+  let styles = {
+    // animation: "slide-up 500ms linear 3000ms infinite normal none",
+    color: changeTextColor()
+  };
+
+  setTimeout(() => {
+    setArrayIndex(randomNumber());
   }, 3000);
+
   function showMenu() {
      setDisplayMenu(prevDisplay => !prevDisplay)
-     console.log('peace')
   }
 
   return (
