@@ -268,11 +268,9 @@ img {
     /* background-color: #00adef; */
     color: white;
     flex-direction: row;
-    /* left: 0; */
-    /* right: 0; */
     padding: 0px;
     min-height: fit-content;
-    width: 77%;
+    width: 72%;
     margin: 0;
   }
 
@@ -286,6 +284,7 @@ img {
     margin: 0;
     align-items: center;
     justify-content: space-between;
+    /* background-color: #00adef; */
   }
   .menu-component ul li {
     list-style: none;
@@ -304,6 +303,7 @@ img {
     border: 3px solid white;
     cursor: pointer;
     transition: background-color 300ms linear;
+    margin-right: 5px;
   }
   .menu-component ul .join:hover {
     background-color: #444;
