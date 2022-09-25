@@ -175,7 +175,7 @@ img {
   border: 4px solid gray;
 }
 
-@media (min-width: 890px) and (max-width: 1750px) {
+@media (min-width: 890px) and (max-width: 1600px) {
   .header-component nav {
     display: flex;
     justify-content: space-between;
@@ -232,7 +232,7 @@ img {
 
 }
 
-@media (min-width: 1750px) {
+@media (min-width: 1600px) {
   .header-component nav {
     display: flex;
     justify-content: space-between;
