@@ -28,7 +28,7 @@ export const ContactUs = () => {
               <FontAwesomeIcon icon={faCheck} className="check" />
             </span>
             <span className="vimeo">
-              Learn about other great brands using Vimeo
+              Learn about other great brands using Flixia
             </span>
           </div>
         </div>
