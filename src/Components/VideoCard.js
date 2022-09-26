@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 
 export const VideoCard = (props) => {  
@@ -10,7 +8,7 @@ export const VideoCard = (props) => {
     return (
         <div className="video-card" style={styles}>
             <figure>
-                <img src={props.imgSrc}/>
+                <img src={props.imgSrc} alt={props.headingText}/>
             </figure>
             <div className="body-text">
                 <div  className="heading-text">{props.headingText}</div>

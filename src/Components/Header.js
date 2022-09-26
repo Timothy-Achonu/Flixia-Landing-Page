@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, { useContext, useState} from "react";
 import logo from "./assets/Flixia-logo.PNG";
 import { Menu } from "./Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +16,7 @@ export const Header = () => {
     "Share video messages",
   ];
   const [displayMenu, setDisplayMenu] = React.useState(false);
-
+  // console.log(arrayIndex)
   function changeTextColor() {
     let color;
     if (arrayIndex === 1) {
@@ -43,16 +43,41 @@ export const Header = () => {
   function showMenu() {
     setDisplayMenu((prevDisplay) => !prevDisplay);
   }
+  const [navStyles, setNavStyles] = useState({})
+  window.addEventListener('scroll', () => {
+     const scrollHeight = window.pageYOffset
+    //  console.log(scrollHeight)
+    if(scrollHeight > 60) {
+      setNavStyles({
+        position: "fixed",
+        opacity: "0.7",
+        padding : "15px 20px"
+      })
+    }
+    else{
+      setNavStyles({})
+    }
+  })
+
+  React.useEffect(() => {
+    if(displayMenu) {
+      setNavStyles(prevStyles => ({...prevStyles, opacity: "1"}))
+    }
+    else{
+      setNavStyles(prevStyles => ({...prevStyles, opacity: "0.7"}))
+    }
+  }, [displayMenu])
+  
 
   return (
     <div className={`header-component `}>
-      <nav className={`${displayMenu ? "hide" : "show"}`}>
+      <nav className={`${displayMenu ? "hide" : "show"}`} style={navStyles}>
         {<Menu hideMenu={showMenu} displayMenu={displayMenu} className={``} />}
         <figure className="hamburger" onClick={showMenu}>
           <FontAwesomeIcon icon={faBars} className="hamburger-main" />
         </figure>
         <figure className="flixia-logo">
-          <img src={logo} />
+          <img src={logo} alt="company-logo"/>
         </figure>
         <div className="new-video">New Video</div>
         <div className="nav-plus">+</div>

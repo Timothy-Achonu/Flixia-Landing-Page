@@ -19,6 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 /* .header-component.show {
@@ -30,9 +32,13 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* position: fixed; */
-  /* padding: 0 20px; */
+  padding: 15px 0px;
+  background-color: black;
+  top: 0;
   /* padding: 20px; */
+}
+.header-component nav.hide {
+  opacity: 1;
 }
 
 .header-component nav .hamburger {
@@ -92,6 +98,7 @@ img {
   width: 100%;
   transition: all 500ms ease-in-out;
   z-index: 2;
+  opacity: 1;
 }
 
 .menu-component.show {
@@ -123,7 +130,7 @@ img {
   z-index: 1;
   /* background-color: #00adef; */
 }
-.header-component .header-mid-text.hide {
+.header-component .header-mid-text {
   z-index: -1;
 }
 

@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import logo from "./assets/Flixia-logo.PNG";
 
 
@@ -9,7 +7,7 @@ export const Footer = () => {
     return (
         <footer>
             <figure>
-                <img src={logo}/>
+                <img src={logo} alt="company-logo"/>
             </figure>
             <p>
               &#169; {currentYear} Flixia.com, Inc. All rights reserved. 

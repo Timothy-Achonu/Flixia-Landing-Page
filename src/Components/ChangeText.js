@@ -16,6 +16,5 @@ function ChangeText({children}) {
         </TextChanger.Provider>
     )
 }
-
 // export default React.memo(TextChanger)
 export default ChangeText
