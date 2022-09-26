@@ -53,7 +53,7 @@ export const ContactUs = () => {
           <input type="checkbox" />
           <span>
             I agree to receive newsletters, product updates, and exclusive
-            offers from Vimeo.
+            offers from Flixia.
           </span>
         </div>
         <button className="contact-btn">Contact our team</button>
