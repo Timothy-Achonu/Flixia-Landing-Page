@@ -10,7 +10,7 @@ export const MidSection = () => {
       imgSrc: marketing,
       headingText: "Video Marketing",
       paragraph:
-        "Reach new customers and get your existing audience excited for what's next with branded videos, virtual events, and webinars tha can be shared everywhere.",
+        "Reach new customers and get your existing audience excited for what's next with branded videos, virtual events, and webinars that can be shared everywhere.",
       bgColor: "#DCCBBA",
     },
     {
