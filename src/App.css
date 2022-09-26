@@ -175,13 +175,73 @@ img {
   border: 4px solid gray;
 }
 
-/* Contact Our Team */
+/* MID SECTION */
+.mid-section {
+  width: 100%;
+}
+
+.mid-section .main-paragraph {
+  padding: 100px 40px;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: #fff8f2;
+}
+.mid-section .main-paragraph .new-paragraph {
+  margin-top: 60px;
+}
+
+.mid-section .video-cards {
+  background-color: black;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mid-section .video-cards .video-card {
+  margin: 40px 10px;
+  padding: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  max-width: 600px;
+  height: 800px;
+}
+
+.mid-section .video-cards .video-card img {
+  border-radius: 15px;
+}
+.mid-section .video-cards .video-card .body-text {
+  margin-top: 40px;
+}
+.mid-section .video-cards .video-card .body-text 
+.heading-text {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+.mid-section .video-cards .video-card .body-text 
+p {
+  font-size: 1.2rem;
+}
+
+.mid-section .video-cards .video-card button {
+  margin: 20px 0;
+  background-color: inherit;
+  padding: 20px 25px;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+/* Contact Section */
 .contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0A0A20;
+  background-color: #0a0a20;
   color: white;
   padding: 20px;
   padding-top: 70px;
@@ -211,17 +271,13 @@ img {
 .contact-us .connect-with-team .customers-questions > div {
   margin: 40px 0;
   font-size: 1.3rem;
-}
-.contact-us .connect-with-team .customers-questions > div span {
-  text-align: center;
-  /* background-color: yellow; */
+  display: flex;
 }
 
 .contact-us .connect-with-team .customers-questions > div .good-font {
   margin-right: 20px;
 }
-.contact-us .connect-with-team .customers-questions > div
-.good-font .check {
+.contact-us .connect-with-team .customers-questions > div .good-font .check {
   font-size: 1.3rem;
 }
 
@@ -254,7 +310,7 @@ img {
   width: 100%;
 }
 
-.contact-us .contact-form input[type=checkbox] {
+.contact-us .contact-form input[type="checkbox"] {
   width: 20px;
   height: 20px;
   align-self: flex-start;
@@ -275,8 +331,9 @@ img {
 }
 .contact-us .contact-form .contact-btn:hover {
   background-color: #00adef;
-
 }
+
+/* MEDIA QUERIES BEGINS */
 
 @media (min-width: 890px) and (max-width: 1500px) {
   .header-component nav {
@@ -330,6 +387,37 @@ img {
     width: 100%;
     z-index: 1;
     /* background-color: #00adef; */
+  }
+
+  /* Contact Section */
+
+  .contact-us {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: #0afa24; */
+    color: white;
+    padding: 20px 60px;
+    padding-top: 70px;
+  }
+
+  .contact-us .connect-with-team {
+    margin: 0px;
+    width: 45%;
+    text-align: center;
+  }
+
+  .contact-us .connect-with-team .connect {
+    font-size: 3.5rem;
+    text-align: start;
+    margin-bottom: 21px;
+    font-weight: 700;
+  }
+
+  .contact-us .contact-form {
+    width: 45%;
+    margin-top: 0px;
   }
 }
 
@@ -424,5 +512,35 @@ img {
     width: 100%;
     z-index: 1;
     /* background-color: #00adef; */
+  }
+
+  /* Contact Section */
+  .contact-us {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: #0afa24; */
+    color: white;
+    padding: 20px 60px;
+    padding-top: 70px;
+  }
+
+  .contact-us .connect-with-team {
+    margin: 0px;
+    width: 45%;
+    text-align: center;
+  }
+
+  .contact-us .connect-with-team .connect {
+    font-size: 3.5rem;
+    text-align: start;
+    margin-bottom: 21px;
+    font-weight: 700;
+  }
+
+  .contact-us .contact-form {
+    width: 45%;
+    margin-top: 0px;
   }
 }

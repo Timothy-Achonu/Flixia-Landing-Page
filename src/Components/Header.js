@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./Flixia-logo.PNG";
+import logo from "./assets/Flixia-logo.PNG";
 import { Menu } from "./Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Header = () => {
   const changingText = [

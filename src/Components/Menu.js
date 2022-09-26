@@ -7,7 +7,7 @@ export const Menu = (props) => {
       <ul>
         <li className="not-in-bigger-screen join">Join</li>
         <li className="not-in-bigger-screen log-in">Log in</li>
-        <li className="not-in-bigger-screen contact">Contact Sales</li>
+        <li className="not-in-bigger-screen contact">Contact Us</li>
         <li>Solutions</li>
         <li>Features</li>
         <li>Resources</li>
