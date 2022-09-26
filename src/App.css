@@ -30,6 +30,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  /* position: fixed; */
+  /* padding: 0 20px; */
   /* padding: 20px; */
 }
 
@@ -84,7 +86,7 @@ img {
   /* left: 0; */
   /* background-color: #00adef; */
   /* right: 0; */
-  top: 0;
+  top: 0px;
   padding: 20px;
   min-height: 100vh;
   width: 100%;
@@ -204,8 +206,8 @@ img {
   padding: 40px;
   border-radius: 15px;
   cursor: pointer;
-  max-width: 600px;
-  height: 800px;
+  max-width: 450px;
+  min-height: 700px;
 }
 
 .mid-section .video-cards .video-card img {
@@ -331,6 +333,28 @@ p {
 }
 .contact-us .contact-form .contact-btn:hover {
   background-color: #00adef;
+}
+
+/* Footer Section */
+footer {
+  width: 100%;
+  padding: 20px 30px;
+  /* background-color: #23313B; */
+  background-color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+footer figure {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+footer span:first-child {
+  margin-left: 3px;
+}
+footer span:hover {
+ color: #888;
+ cursor: pointer;
 }
 
 /* MEDIA QUERIES BEGINS */

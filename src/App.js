@@ -2,6 +2,7 @@ import './App.css';
 import { Header } from './Components/Header';
 import {ContactUs} from './Components/ContactUs'
 import {MidSection} from './Components/MidSection'
+import {Footer}  from './Components/Footer'
  
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
        <Header/>
        <MidSection />
        <ContactUs />
+       <Footer />
     </div>
   );
 }
