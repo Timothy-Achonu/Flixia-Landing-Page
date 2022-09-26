@@ -79,7 +79,7 @@ img {
 
 /* Menu Component */
 .menu-component {
-  position: absolute;
+  position: fixed;
   background-color: white;
   color: black;
   left: -1000px;

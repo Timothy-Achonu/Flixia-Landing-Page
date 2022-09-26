@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 import logo from "./assets/Flixia-logo.PNG";
 import { Menu } from "./Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { TextChanger } from "./ChangeText";
 
 export const Header = () => {
+  const arrayIndex = useContext(TextChanger)
   const changingText = [
     "Build a company video hub",
     "Create videos in minutes",
@@ -13,13 +15,7 @@ export const Header = () => {
     "Host vitual events",
     "Share video messages",
   ];
-  const [arrayIndex, setArrayIndex] = React.useState(0);
   const [displayMenu, setDisplayMenu] = React.useState(false);
-  //   console.log(changingText[arrayIndex], arrayIndex);
-  function randomNumber() {
-    return Math.floor(Math.random() * 6);
-  }
-  //   console.log(randomNumber())
 
   function changeTextColor() {
     let color;
@@ -41,13 +37,8 @@ export const Header = () => {
     return color;
   }
   let styles = {
-    // animation: "slide-up 500ms linear 3000ms infinite normal none",
     color: changeTextColor(),
   };
-
-  setTimeout(() => {
-      setArrayIndex(randomNumber());
-  },3000);
 
   function showMenu() {
     setDisplayMenu((prevDisplay) => !prevDisplay);
