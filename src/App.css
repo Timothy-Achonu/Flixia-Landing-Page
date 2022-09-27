@@ -223,13 +223,11 @@ img {
 .mid-section .video-cards .video-card .body-text {
   margin-top: 40px;
 }
-.mid-section .video-cards .video-card .body-text 
-.heading-text {
+.mid-section .video-cards .video-card .body-text .heading-text {
   margin-bottom: 10px;
   font-size: 1.4rem;
 }
-.mid-section .video-cards .video-card .body-text 
-p {
+.mid-section .video-cards .video-card .body-text p {
   font-size: 1.2rem;
 }
 
@@ -242,7 +240,6 @@ p {
   border-radius: 16px;
   cursor: pointer;
 }
-
 
 /* Contact Section */
 .contact-us {
@@ -360,8 +357,8 @@ footer span:first-child {
   margin-left: 3px;
 }
 footer span:hover {
- color: #888;
- cursor: pointer;
+  color: #888;
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES BEGINS */
@@ -418,6 +415,14 @@ footer span:hover {
     width: 100%;
     z-index: 1;
     /* background-color: #00adef; */
+  }
+  /*  Buttons */
+  .header-component .header-buttons .see-plans-btn {
+    width: 50%;
+  }
+
+  .header-component .header-buttons .join-free-btn {
+    width: 50%;
   }
 
   /* Contact Section */
@@ -543,6 +548,14 @@ footer span:hover {
     width: 100%;
     z-index: 1;
     /* background-color: #00adef; */
+  }
+  /* Buttons */
+  .header-component .header-buttons .see-plans-btn {
+    width: 35%;
+  }
+
+  .header-component .header-buttons .join-free-btn {
+    width: 35%;
   }
 
   /* Contact Section */
